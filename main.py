@@ -15,7 +15,7 @@ INITIAL_RPC_NODES = [
 DEFAULT_PORT = 8899
 GET_CLUSTER_NODES_METHOD = {"jsonrpc": "2.0", "id": 1, "method": "getClusterNodes"}
 GET_SLOT_METHOD = {"jsonrpc": "2.0", "id": 1, "method": "getSlot"}
-RETRY_COUNT = 1  # Number of retries for get_cluster_nodes
+RETRY_COUNT = 2  # Number of retries for get_cluster_nodes
 SCAN_NULL_RPC_NODES = True  # Set this to False to skip nodes with "rpc": null
 
 # Worker settings
