@@ -24,7 +24,7 @@ The script performs the following tasks:
 
 1. Clone the repository:
    ```bash
-   git clone <your repository URL>
+   git clone https://github.com/c29r3/solana-rpc-finder.git
    ```
 
 2. Navigate to the project directory:
