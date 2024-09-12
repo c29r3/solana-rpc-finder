@@ -1,6 +1,6 @@
 # Solana RPC Finder
 
-**Solana RPC Finder** is a tool that helps discover available RPC nodes in the Solana network to improve validator synchronization times, especially during restarts.
+**Solana RPC Finder** is a tool that helps discover available RPC nodes in the Solana network.
 
 ## Table of Contents
 - [Description](#description)
