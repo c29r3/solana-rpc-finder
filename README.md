@@ -7,6 +7,8 @@
 - [Installation](#installation)
 - [Configuration](#configuration)
 - [Usage](#usage)
+- [Running with Docker](#running-with-docker)
+- [Updating the Docker Image](#updating-the-docker-image)
 - [Output Format](#output-format)
 - [Requirements](#requirements)
 - [License](#license)
@@ -63,6 +65,35 @@ You can configure the following parameters inside the script:
    - Check node availability and save active nodes to the `active_nodes.json` file.
 
 3. After completion, all active nodes will be saved to the `active_nodes.json` file.
+
+## Running with Docker
+
+To run the project inside a Docker container:
+
+1. Run the following command to start the Docker container and mount the necessary files:
+
+   ```bash
+   touch active_nodes.json full_cluster.json; \
+   docker run -it --rm \
+   -v $(pwd)/active_nodes.json:/app/active_nodes.json \
+   -v $(pwd)/full_cluster.json:/app/full_cluster.json \
+   --user $(id -u):$(id -g) \
+   c29r3/solana-rpc-finder:latest
+   ```
+
+   This command will:
+   - Mount `active_nodes.json` and `full_cluster.json` from your current working directory into the container.
+   - Ensure the container is run with the same user permissions as your host system.
+
+## Updating the Docker Image
+
+To pull the latest version of the Docker image and update it, run:
+
+```bash
+docker pull c29r3/solana-rpc-finder:latest
+```
+
+This will fetch the latest version of the image from the Docker Hub.
 
 ## Output Format
 
