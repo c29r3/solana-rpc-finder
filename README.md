@@ -54,7 +54,7 @@ You can configure the following parameters inside the script:
 1. Run the script:
 
    ```bash
-   python solana_rpc_finder.py
+   python main.py
    ```
 
 2. The script will perform the following steps:
@@ -71,14 +71,28 @@ The `active_nodes.json` file contains a list of active nodes in JSON format. Exa
 ```json
 [
     {
-        "pubkey": "6FwJf2j...",
-        "rpc": "http://192.168.1.10:8899",
-        "latency": 50.23
+        "featureSet": 4215500110,
+        "gossip": "192.168.0.2:8000",
+        "pubkey": "7mF8NZ...",
+        "pubsub": "192.168.0.2:8900",
+        "rpc": "192.168.0.2:8899",
+        "shredVersion": 50093,
+        "tpu": "192.168.0.2:8012",
+        "tpuQuic": "192.168.0.2:8018",
+        "version": "1.18.23",
+        "latency": 218.30987930297852
     },
     {
-        "pubkey": "8HwKj3m...",
-        "rpc": "http://192.168.1.12:8899",
-        "latency": 45.67
+        "featureSet": 4215500110,
+        "gossip": "192.168.0.3:8000",
+        "pubkey": "9ubTvP...",
+        "pubsub": "192.168.0.3:8900",
+        "rpc": "192.168.0.3:8899",
+        "shredVersion": 50093,
+        "tpu": "192.168.0.3:8003",
+        "tpuQuic": "192.168.0.3:8009",
+        "version": "1.18.22",
+        "latency": 210.6649875640869
     }
 ]
 ```
