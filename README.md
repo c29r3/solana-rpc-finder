@@ -1,6 +1,7 @@
 # Solana RPC Finder
 
-**Solana RPC Finder** is a tool that helps discover available RPC nodes in the Solana network.
+**Solana RPC Finder** is a tool that helps discover available RPC nodes in the Solana network.  
+https://solana.rpc-finder.com/
 
 ## Table of Contents
 - [Description](#description)
