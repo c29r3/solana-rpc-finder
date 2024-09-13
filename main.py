@@ -70,7 +70,7 @@ def check_node(ip, port=DEFAULT_PORT):
         start_time = time.time()
         url = f"http://{ip}:{port}"
         response = requests.post(url, json=GET_SLOT_METHOD, timeout=2)
-        latency = (time.time() - start_time) * 1000  # Convert latency to milliseconds
+        latency = (time.time() - start_time)
         if response.status_code == 200:
             return {"ip": ip, "port": port, "latency": latency, "is_active": True}
         else:
